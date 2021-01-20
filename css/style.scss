@@ -1,12 +1,12 @@
 /* MOBILE FIRST */ 
 
 // variables
-$bright-red: hsl(12, 88%, 59%);
-$dark-blue: hsl(228, 39%, 23%);
-$dark-grayish-blue: hsl(227, 12%, 61%);
-$very-pale-blue: hsl(233, 12%, 13%);
-$very-pale-red: hsl(13, 100%, 96%);
-$very-light-gray: hsl(0, 0%, 98%);
+$bright-red: rgb(242, 95, 58);
+$dark-blue: rgb(36, 45, 82);
+$dark-grayish-blue: rgb(144, 149, 167);
+$very-pale-blue: rgb(29, 30, 37);
+$very-pale-red: rgb(255, 239, 235);
+$very-light-gray: rgb(250, 250, 250);
 
 *{
   margin: 0;
@@ -20,6 +20,7 @@ $very-light-gray: hsl(0, 0%, 98%);
 html{
   font-size: 62.5%;
   font-family: 'Be Vietnam', sans-serif;
+  overflow: hidden;
 }
 
 @mixin flexCenter($direction) {
