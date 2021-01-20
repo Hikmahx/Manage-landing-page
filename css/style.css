@@ -16,7 +16,7 @@ html {
 }
 
 header {
-  margin: 4rem 2.4rem 0;
+  padding: 4rem 2.4rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,15 +27,6 @@ header {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-}
-
-header::before {
-  content: url(../images/bg-tablet-pattern.svg);
-  -webkit-transform: scale(0.56);
-          transform: scale(0.56);
-  position: absolute;
-  top: -33.4rem;
-  right: -34.1rem;
 }
 
 header .logo {
@@ -101,8 +92,13 @@ header nav {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-transition: opacity 0.4s ease-in-out;
-  transition: opacity 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+header nav.open {
+  visibility: visible;
+  opacity: 1;
 }
 
 header nav ul {

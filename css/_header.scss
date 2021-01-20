@@ -1,17 +1,18 @@
 header{
-  margin: 4rem 2.4rem 0;
+  padding: 4rem 2.4rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
+  // background: url(../images/bg-tablet-pattern.svg) no-repeat -33.4rem -34.1rem;
 
-  &::before{
-    content: url(../images/bg-tablet-pattern.svg);
-    transform: scale(0.56);
-    position: absolute;
-    top: -33.4rem;
-    right: -34.1rem;
-  }
+  // &::before{
+  //   content: url(../images/bg-tablet-pattern.svg);
+  //   transform: scale(0.56);
+  //   position: absolute;
+  //   top: -33.4rem;
+  //   right: -34.1rem;
+  // }
 
   .logo{
     width: 18rem;
@@ -57,7 +58,12 @@ header{
     border-radius: 0.5rem;
     @include flexCenter(column);
     justify-content: flex-start;
-    transition: opacity 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+
+    &.open{
+      visibility: visible;
+      opacity: 1;
+    }
 
     ul{
       text-align: center;
