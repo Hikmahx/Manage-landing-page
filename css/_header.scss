@@ -39,6 +39,20 @@ header{
       height: 0.4rem;
       background: $dark-blue;
     }
+    
+    &.open{
+      .line-1{
+        transform: rotate(45deg) translate(0.4rem, 0.3rem);
+        transition: 0.4s ease-out;
+      }
+      .line-2{
+        display: none;
+      }
+      .line-3{
+        transform: rotate(-45deg) translate(0.4rem, -0.3rem);
+        transition: 0.4s ease-out;
+      }
+    }
   }
 
   nav{
@@ -71,16 +85,12 @@ header{
 
       li{
         margin-bottom: 2.4rem;
-        // visibility: hidden;
-        // opacity: 0;
-        // transition: 0.4s ease-in 0.3s;
         
         a{
           color: $dark-blue;
           font-size: 1.6rem;
           font-weight: 700;
           letter-spacing: -0.4px;
-          // letter-spacing: 0.2px;
         }
       }
     }
