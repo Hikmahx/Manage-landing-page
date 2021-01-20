@@ -30,4 +30,17 @@ html{
   flex-direction: $direction;
 }
 
+button{
+  padding: 1.48rem;
+  border-radius: 3rem;
+  background: $bright-red;
+  color: #fff;
+  font-family: 'Be Vietnam' sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: 3rem auto;
+  border: none;
+}
+
 @import './header';
