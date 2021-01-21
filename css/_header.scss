@@ -3,16 +3,19 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  // z-index: 1;
   position: relative;
   // background: url(../images/bg-tablet-pattern.svg) no-repeat -33.4rem -34.1rem;
 
-  // &::before{
-  //   content: url(../images/bg-tablet-pattern.svg);
-  //   transform: scale(0.56);
-  //   position: absolute;
-  //   top: -33.4rem;
-  //   right: -34.1rem;
-  // }
+  &::before{
+    content: url(../images/bg-tablet-pattern.svg);
+    transform: scale(0.56);
+    position: absolute;
+    // top: -33.4rem;
+    // right: -34.1rem;
+    top: -29.4rem;
+    right: -31.7rem;
+  }
 
   .logo{
     width: 18rem;
@@ -61,14 +64,14 @@ header{
     // z-index: 999999;
     height: 51.5%;
     background: #fff;
-    box-shadow:-1rem 23rem 14rem 17rem #d2d2d2;
+    box-shadow:-1rem 23rem 14rem 17rem rgba(7, 7, 7, 0.2);
     position: fixed;
     top: 18.5%;
     left: 6.5%;
     right: 6.5%;
     visibility: hidden;
     opacity: 0;
-
+    z-index: 1;
     border-radius: 0.5rem;
     @include flexCenter(column);
     justify-content: flex-start;
