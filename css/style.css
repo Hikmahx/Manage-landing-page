@@ -18,6 +18,14 @@ html {
   overflow-x: hidden;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  color: #242d52;
+}
+
+p {
+  color: #9095a7;
+}
+
 button {
   padding: 1.35rem 3.2rem;
   border-radius: 3rem;
@@ -165,7 +173,7 @@ header button {
 
 .hero {
   width: 100%;
-  padding: 4.5rem 0 10rem;
+  padding: 4.5rem 0 8rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -229,5 +237,97 @@ header button {
 .hero .hero-text button {
   -webkit-box-shadow: 0rem 1.3rem 1rem -0.5rem rgba(242, 95, 58, 0.35);
           box-shadow: 0rem 1.3rem 1rem -0.5rem rgba(242, 95, 58, 0.35);
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.about h1, .about p {
+  padding: 0 4.4rem;
+}
+
+.about h1 {
+  margin-top: -1.4rem;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4.4rem;
+  letter-spacing: -1.1px;
+}
+
+.about p {
+  padding-bottom: 5.4rem;
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  line-height: 2.8rem;
+  letter-spacing: -0.18px;
+}
+
+.about .details {
+  text-align: left;
+}
+
+.about .details .detail {
+  margin-bottom: 4.7rem;
+}
+
+.about .details .detail .numbered-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  height: 3.8rem;
+}
+
+.about .details .detail .numbered-heading::before {
+  content: '';
+  position: absolute;
+  background: #ffefeb;
+  top: 0%;
+  right: 0%;
+  width: 90%;
+  height: 3.8rem;
+  z-index: -1;
+}
+
+.about .details .detail .numbered-heading span {
+  background: #f25f3a;
+  color: #fff;
+  margin-left: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 700;
+  padding: 0.55rem 0.75rem 0.95rem 0.75rem;
+  width: 6.6rem;
+  border-radius: 2rem;
+  text-align: center;
+}
+
+.about .details .detail .numbered-heading h3 {
+  padding-top: 0.5rem;
+  font-size: 1.56rem;
+  margin-left: 1.56rem;
+  height: 3.8rem;
+}
+
+.about .details .detail p {
+  padding: 0 2.6rem 0 1.6rem;
+  margin-top: 0.85rem;
+  letter-spacing: 0;
 }
 /*# sourceMappingURL=style.css.map */
