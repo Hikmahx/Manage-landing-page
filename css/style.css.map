@@ -4,7 +4,8 @@
     "sources": [
         "style.scss",
         "_header.scss",
-        "_banner.scss"
+        "_banner.scss",
+        "_about.scss"
     ],
     "names": [],
     "file": "style.css"
