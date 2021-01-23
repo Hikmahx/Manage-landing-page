@@ -446,6 +446,10 @@ header button {
   margin: 0.3rem 0.2rem;
 }
 
+.carousel .manual-navigation label:focus {
+  background: #f25f3a;
+}
+
 .carousel button {
   -webkit-box-shadow: 0rem 1.3rem 1rem -0.5rem rgba(242, 95, 58, 0.35);
           box-shadow: 0rem 1.3rem 1rem -0.5rem rgba(242, 95, 58, 0.35);
