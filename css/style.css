@@ -330,4 +330,106 @@ header button {
   margin-top: 0.85rem;
   letter-spacing: 0;
 }
+
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.carousel h1 {
+  font-size: 3.25rem;
+  letter-spacing: -1px;
+  margin: 0 auto 0.4rem;
+}
+
+.carousel .slider {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: scroll;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  text-align: center;
+}
+
+.carousel .slider .cards {
+  padding-top: 8rem;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.carousel .slider .cards input {
+  display: none;
+}
+
+.carousel .slider .cards .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fafafa;
+  height: 25rem;
+  width: 33.5rem;
+  margin: 1rem 2rem 6rem;
+}
+
+.carousel .slider .cards .card .img-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 7.2rem;
+  height: 7.2rem;
+  position: relative;
+  top: -3.4rem;
+}
+
+.carousel .slider .cards .card .img-wrapper img {
+  width: 100%;
+}
+
+.carousel .slider .cards .card h2 {
+  font-size: 1.6rem;
+  margin-top: -1rem;
+}
+
+.carousel .slider .cards .card p {
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.6rem;
+  padding: 0 2rem;
+  width: 33.5rem;
+}
+
+.carousel button {
+  -webkit-box-shadow: 0rem 1.3rem 1rem -0.5rem rgba(242, 95, 58, 0.35);
+          box-shadow: 0rem 1.3rem 1rem -0.5rem rgba(242, 95, 58, 0.35);
+  margin-top: 2.1rem;
+  margin-bottom: 400rem;
+}
 /*# sourceMappingURL=style.css.map */

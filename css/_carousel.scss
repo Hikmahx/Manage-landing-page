@@ -1,0 +1,94 @@
+.carousel{
+  display: flex;
+  flex-direction: column;
+
+  h1{
+    font-size: 3.25rem;
+    letter-spacing: -1px;
+    margin: 0 auto 0.4rem;
+  }
+
+  .slider{
+    position: relative;
+    // left: 1rem;
+    // right: 1rem;
+    // height: 27rem;
+    // overflow: hidden;
+    // @include flexCenter(row);
+    display: flex;
+    overflow-x: scroll;
+    align-items: flex-start;
+    text-align: center;
+  
+
+
+    .cards{
+      padding-top: 8rem;
+      margin: auto;
+      // overflow: hidden;
+      display: flex;
+
+      input{
+        display: none;
+      }
+
+      .card{
+        // width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $very-light-gray;
+        height: 25rem;
+        width: 33.5rem;
+        margin: 1rem 2rem 6rem;
+
+        .img-wrapper{
+          @include flexCenter(column);
+          // transform: scale(0.5);
+          width: 7.2rem;
+          height: 7.2rem;
+          position: relative;
+          top: -3.4rem;
+
+          img{
+            width: 100%;
+            // transform: scale(0.5);
+          }
+        }
+        
+          h2{
+            font-size: 1.6rem;
+            margin-top: -1rem;
+          }
+
+          p{
+            margin-top: 2rem;
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 2.6rem;
+            padding: 0 2rem;
+            width: 33.5rem;
+          }
+        
+      }
+
+      // &:first-child{
+      //   margin-left: 2rem;
+      // }
+
+      // &:last-child{
+      //   margin-right: 2rem;
+      // }
+    }
+  }
+
+  .manual-navigation{
+
+  }
+
+  button{
+    box-shadow: 0rem 1.3rem 1rem -0.5rem rgba(242, 95, 58, 0.35);
+    margin-top: 2.1rem;
+    margin-bottom: 400rem;
+  }
+}
