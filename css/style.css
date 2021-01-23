@@ -426,10 +426,30 @@ header button {
   width: 33.5rem;
 }
 
+.carousel .manual-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 0rem;
+  position: relative;
+  top: -3.68rem;
+}
+
+.carousel .manual-navigation label {
+  border: 0.1rem solid #f25f3a;
+  padding: 3px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0.3rem 0.2rem;
+}
+
 .carousel button {
   -webkit-box-shadow: 0rem 1.3rem 1rem -0.5rem rgba(242, 95, 58, 0.35);
           box-shadow: 0rem 1.3rem 1rem -0.5rem rgba(242, 95, 58, 0.35);
-  margin-top: 2.1rem;
+  margin-top: 0.7rem;
   margin-bottom: 400rem;
 }
 /*# sourceMappingURL=style.css.map */

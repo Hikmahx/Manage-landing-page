@@ -83,12 +83,24 @@
   }
 
   .manual-navigation{
+    display: flex;
+    justify-content: center;
+    margin-top: 0rem;
+    position: relative;
+    top: -3.68rem;
 
+    label{
+      border:0.1rem solid $bright-red;
+      padding: 3px;
+      border-radius: 50%;
+      cursor: pointer;
+      margin: 0.3rem 0.2rem;
+    }
   }
 
   button{
     box-shadow: 0rem 1.3rem 1rem -0.5rem rgba(242, 95, 58, 0.35);
-    margin-top: 2.1rem;
+    margin-top: 0.7rem;
     margin-bottom: 400rem;
   }
 }
