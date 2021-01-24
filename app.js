@@ -19,11 +19,19 @@ const size = card[0].clientWidth + 40;
 
 const radioCards = document.querySelectorAll(`#btn${counter} ~ .first`);
 
+function manualNav(cardNumber){
+  manualBtns.forEach(manualBtn =>{
+    manualBtn.classList.remove('active');
+  })
+  manualBtns[cardNumber].classList.add('active');
+}
+
 manualBtns.forEach(manualBtn =>{
   manualBtn.addEventListener('click', (e)=>{
     let cardNumber = manualBtn.getAttribute('for').charAt(3) -1;
     manualBtn.checked = true;
     cards.style.transform = `translateX(-${size * cardNumber}px)`;
     cards.style.transition = '0.4s ease-in-out';
+    manualNav(cardNumber);
   })
 })
