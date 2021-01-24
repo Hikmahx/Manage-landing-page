@@ -20,9 +20,12 @@ const size = card[0].clientWidth + 40;
 const radioCards = document.querySelectorAll(`#btn${counter} ~ .first`);
 
 function manualNav(cardNumber){
+  // removes all bg
   manualBtns.forEach(manualBtn =>{
     manualBtn.classList.remove('active');
   })
+
+  // adds bg for only btn with this number
   manualBtns[cardNumber].classList.add('active');
 }
 
