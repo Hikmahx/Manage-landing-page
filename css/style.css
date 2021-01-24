@@ -446,7 +446,7 @@ header button {
   margin: 0.3rem 0.2rem;
 }
 
-.carousel .manual-navigation label:focus {
+.carousel .manual-navigation label.active {
   background: #f25f3a;
 }
 

@@ -76,6 +76,10 @@
       border-radius: 50%;
       cursor: pointer;
       margin: 0.3rem 0.2rem;
+
+      &.active{
+        background: $bright-red;
+      }
     }
   }
 
