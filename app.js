@@ -55,11 +55,9 @@ cloneFirst.id = 'firstClone';
 cloneLast = lastCard.cloneNode(true);
 cloneLast.id = 'lastClone';        
 
-  // Clone first and last slide
-  cards.appendChild(cloneFirst);
-  cards.insertBefore(cloneLast, firstCard);
-auto();
-
+// Clone first and last slide
+cards.appendChild(cloneFirst);
+cards.insertBefore(cloneLast, firstCard);
 
 // infinite slider event
 cards.addEventListener('transitionend', ()=>{
@@ -79,13 +77,3 @@ cards.addEventListener('transitionend', ()=>{
 
 })
 
-
-// automatic slide
-function auto(){
-  setInterval(() => {
-      cards.style.transform = `translateX(-${size * counter}px)`;
-      cards.style.transition = '0.4s ease-in-out';
-      console.log(counter);
-      counter++
-  }, 2000);
-}
