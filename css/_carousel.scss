@@ -12,6 +12,7 @@
     position: relative;
     display: flex;
     overflow-x: scroll;
+    // overflow: hidden;
     align-items: flex-start;
     text-align: center;
   
@@ -19,6 +20,7 @@
       padding-top: 8rem;
       margin: auto;
       display: flex;
+      // transform: translateX(-375px);
 
       input{
         display: none;
