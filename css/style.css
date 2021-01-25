@@ -353,10 +353,17 @@ header button {
   display: -ms-flexbox;
   display: flex;
   overflow-x: scroll;
+  -ms-scroll-snap-type: inline mandatory;
+      scroll-snap-type: inline mandatory;
+  scroll-padding-left: 2rem;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   text-align: center;
+}
+
+.carousel .slider::-webkit-scrollbar {
+  display: none;
 }
 
 .carousel .slider .cards {
@@ -383,6 +390,7 @@ header button {
       -ms-flex-align: center;
           align-items: center;
   background: #fafafa;
+  scroll-snap-align: start;
   height: 25rem;
   width: 33.5rem;
   margin: 1rem 2rem 6rem;

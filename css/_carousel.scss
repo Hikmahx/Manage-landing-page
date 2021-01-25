@@ -12,9 +12,15 @@
     position: relative;
     display: flex;
     overflow-x: scroll;
+    scroll-snap-type: inline mandatory;
+    scroll-padding-left: 2rem;
     // overflow: hidden;
     align-items: flex-start;
     text-align: center;
+    
+    &::-webkit-scrollbar{
+      display: none;
+    }
   
     .cards{
       padding-top: 8rem;
@@ -31,6 +37,7 @@
         flex-direction: column;
         align-items: center;
         background: $very-light-gray;
+        scroll-snap-align: start;
         height: 25rem;
         width: 33.5rem;
         margin: 1rem 2rem 6rem;
