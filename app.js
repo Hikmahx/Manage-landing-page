@@ -8,17 +8,22 @@ menu.addEventListener('click', ()=>{
 })
 
 
+
 // UI for carousel slider
-const cards = document.querySelector('.cards');
-const  card = document.querySelectorAll('.card');
-const manualBtns = document.querySelectorAll('.manual-btn');
+const cards = document.querySelector('.cards'),
+      card = document.querySelectorAll('.card'),
+      manualBtns = document.querySelectorAll('.manual-btn'),
+      slider = document.querySelector('.slider'),
+      size = card[0].clientWidth + 40;
 
-// counter
-let counter = 1;
-const size = card[0].clientWidth + 40;
 
-const radioCards = document.querySelectorAll(`#btn${counter} ~ .first`);
+// window default event
+window.addEventListener('load', ()=>{
+  checkBtn(0);
+})
 
+
+// click event (for bullet btns)
 manualBtns.forEach(manualBtn =>{
   
   manualBtn.addEventListener('click', (e)=>{
@@ -26,63 +31,27 @@ manualBtns.forEach(manualBtn =>{
     manualBtn.checked = true;
     cards.style.transform = `translateX(-${size * cardNumber}px)`;
     cards.style.transition = '0.4s ease-in-out';
-    manualNav(cardNumber);
+    checkBtn(cardNumber);
   })
 })
 
-function manualNav(cardNumber){
+
+// Scroll event (checks bullet btn)
+slider.addEventListener('scroll', ()=>{
+  let right  = -1 * cards.getBoundingClientRect().left/ window.innerWidth;
+  
+  // checks if the card is fully moved
+  if(right - Math.floor(right) == 0){{
+    checkBtn(right);
+  }}
+})
+
+
+function checkBtn(cardNumber){
   // removes all bg
   manualBtns.forEach(manualBtn =>{
     manualBtn.classList.remove('active');
   })
-
   // adds bg for only btn with this number
   manualBtns[cardNumber].classList.add('active');
 }
-
-
-// slider event (shorter) on scroll
-// let slider = document.querySelector('.slider');
-// cards.addEventListener('click', ()=>{
-  // let counter = 1;
-  // let left  = cards.getBoundingClientRect().right;
-  // num = card.classList[1]; 
-  // console.log(num)
-
-  // card.forEach(card => {
-  //   num = card.classList[1]; 
-  //   console.log(num)
-  // })
-// })
-
-
-// window default event
-window.addEventListener('load', ()=>{
-  manualNav(0);
-})
-
-
-
-// card.forEach(cardSingle=>{
-//   cardSingle.addEventListener('click', ()=>{
-//     let number = cardSingle.classList[1];
-//     let right  = cards.getBoundingClientRect().right;
-//     console.log(`right ${right}`)
-//     console.log(number)
-//     manualNav(number-1);
-//     console.log(manualBtns[number-1])
-//   })
-// })
-
-
-let slider = document.querySelector('.slider');
-slider.addEventListener('scroll', ()=>{
-  card.forEach(card =>{
-      let right  = -1 * cards.getBoundingClientRect().left/ window.innerWidth;
-      whole = right -Math.floor(right)
-      if(right - Math.floor(right) == 0){{
-        console.log(`right ${right}`)
-        manualNav(right);
-      }}
-  })  
-})
