@@ -40,4 +40,30 @@ function manualNav(cardNumber){
   manualBtns[cardNumber].classList.add('active');
 }
 
+let slider = document.querySelector('.slider');
+// let left  = cards.getBoundingClientRect().right;
+cards.addEventListener('click', ()=>{
+  let left  = cards.getBoundingClientRect().right;
+  // let num = cards.getElementsByClassName('card').classList[1];
+  card.forEach(card => {
+    num = card.classList[1]; 
+    if(num == 1 && left == 1500){
+      manualNav(num-1);
+      console.log(num);
+    }
+    if(num == 2 && left == 1125){
+      manualNav(num-1);
+      console.log(num);
+    }
+    if(num == 3 && left == 750){
+      manualNav(num-1);
+      console.log(num);
+    }
+    if(num == 4 && left == 375){
+      manualNav(num-1);
+      console.log(num);
+    }
+  });  
+  console.log(left);
+})
 
