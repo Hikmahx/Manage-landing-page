@@ -40,33 +40,20 @@ function manualNav(cardNumber){
   manualBtns[cardNumber].classList.add('active');
 }
 
-let slider = document.querySelector('.slider');
-// let left  = cards.getBoundingClientRect().right;
-cards.addEventListener('click', ()=>{
-  let left  = cards.getBoundingClientRect().right;
-  // let num = cards.getElementsByClassName('card').classList[1];
-  card.forEach(card => {
-    num = card.classList[1]; 
-    if(num == 1 && left == 1500){
-      manualNav(num-1);
-      console.log(num);
-    }
-    if(num == 2 && left == 1125){
-      manualNav(num-1);
-      console.log(num);
-    }
-    if(num == 3 && left == 750){
-      manualNav(num-1);
-      console.log(num);
-    }
-    if(num == 4 && left == 375){
-      manualNav(num-1);
-      console.log(num);
-    }
-  });  
-  console.log(left);
-})
 
+// slider event (shorter) on scroll
+// let slider = document.querySelector('.slider');
+// cards.addEventListener('click', ()=>{
+  // let counter = 1;
+  // let left  = cards.getBoundingClientRect().right;
+  // num = card.classList[1]; 
+  // console.log(num)
+
+  // card.forEach(card => {
+  //   num = card.classList[1]; 
+  //   console.log(num)
+  // })
+// })
 
 
 // window default event
@@ -74,3 +61,28 @@ window.addEventListener('load', ()=>{
   manualNav(0);
 })
 
+
+
+// card.forEach(cardSingle=>{
+//   cardSingle.addEventListener('click', ()=>{
+//     let number = cardSingle.classList[1];
+//     let right  = cards.getBoundingClientRect().right;
+//     console.log(`right ${right}`)
+//     console.log(number)
+//     manualNav(number-1);
+//     console.log(manualBtns[number-1])
+//   })
+// })
+
+card.forEach(cardSingle=>{
+  cardSingle.addEventListener('click', ()=>{
+    let slider = document.querySelector('.slider');
+    let width = slider.offsetWidth;
+    let number = cardSingle.classList[1];
+    manualNav(number-1);
+
+    if(number ==4){
+      manualNav(3)
+    }
+  })
+})
