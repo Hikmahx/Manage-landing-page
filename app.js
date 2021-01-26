@@ -74,15 +74,15 @@ window.addEventListener('load', ()=>{
 //   })
 // })
 
-card.forEach(cardSingle=>{
-  cardSingle.addEventListener('click', ()=>{
-    let slider = document.querySelector('.slider');
-    let width = slider.offsetWidth;
-    let number = cardSingle.classList[1];
-    manualNav(number-1);
 
-    if(number ==4){
-      manualNav(3)
-    }
-  })
+let slider = document.querySelector('.slider');
+slider.addEventListener('scroll', ()=>{
+  card.forEach(card =>{
+      let right  = -1 * cards.getBoundingClientRect().left/ window.innerWidth;
+      whole = right -Math.floor(right)
+      if(right - Math.floor(right) == 0){{
+        console.log(`right ${right}`)
+        manualNav(right);
+      }}
+  })  
 })
