@@ -13,7 +13,7 @@
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: inline mandatory;
-    scroll-padding-left: 2rem;
+    // scroll-padding-left: 2rem;
     // overflow: hidden;
     align-items: flex-start;
     text-align: center;
@@ -37,7 +37,7 @@
         flex-direction: column;
         align-items: center;
         background: $very-light-gray;
-        scroll-snap-align: start;
+        scroll-snap-align: center;
         height: 25rem;
         width: 33.5rem;
         margin: 1rem 2rem 6rem;
@@ -95,5 +95,15 @@
   button{
     box-shadow: 0rem 1.3rem 1rem -0.5rem rgba(242, 95, 58, 0.35);
     margin-top: 0.7rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .carousel .slider .cards .card{
+    width: 28rem;
+    p{
+      width: 28rem;
+    }
+    
   }
 }

@@ -355,7 +355,6 @@ header button {
   overflow-x: scroll;
   -ms-scroll-snap-type: inline mandatory;
       scroll-snap-type: inline mandatory;
-  scroll-padding-left: 2rem;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -390,7 +389,7 @@ header button {
       -ms-flex-align: center;
           align-items: center;
   background: #fafafa;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
   height: 25rem;
   width: 33.5rem;
   margin: 1rem 2rem 6rem;
@@ -462,5 +461,14 @@ header button {
   -webkit-box-shadow: 0rem 1.3rem 1rem -0.5rem rgba(242, 95, 58, 0.35);
           box-shadow: 0rem 1.3rem 1rem -0.5rem rgba(242, 95, 58, 0.35);
   margin-top: 0.7rem;
+}
+
+@media (max-width: 320px) {
+  .carousel .slider .cards .card {
+    width: 28rem;
+  }
+  .carousel .slider .cards .card p {
+    width: 28rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
