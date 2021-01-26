@@ -445,7 +445,7 @@ header button {
   top: -3.68rem;
 }
 
-.carousel .manual-navigation label {
+.carousel .manual-navigation span {
   border: 0.1rem solid #f25f3a;
   padding: 3px;
   border-radius: 50%;
@@ -453,7 +453,7 @@ header button {
   margin: 0.3rem 0.2rem;
 }
 
-.carousel .manual-navigation label.active {
+.carousel .manual-navigation span.active {
   background: #f25f3a;
 }
 
