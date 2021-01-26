@@ -67,3 +67,10 @@ cards.addEventListener('click', ()=>{
   console.log(left);
 })
 
+
+
+// window default event
+window.addEventListener('load', ()=>{
+  manualNav(0);
+})
+
