@@ -1,13 +1,17 @@
 footer{
+  margin-top: 1.3rem;
   background: $very-dark-blue;
   .upper{
-    background: $bright-red;
+    padding: 1rem 2rem 0;
+    background: $bright-red url(../images/bg-simplify-section-mobile.svg) no-repeat left center;
     @include flexCenter(column);
     text-align: center;
-    height: 50vh;
+    height: 72.2vh;
+
     h1{
       font-size: 4rem;
       color: #fff;
+      line-height: 5rem;
     }
     button{
       color: $bright-red;
@@ -17,8 +21,8 @@ footer{
 
   .lower{
     // height: 70vh;
-    height: 95.5vh;
-    padding: 2.2rem 2.5rem;
+    height: 95.8vh;
+    padding:2.3rem 2.5rem 2.2rem;
     form{
       @include flexCenter(row);
       width: 100%;
@@ -34,7 +38,7 @@ footer{
         &::placeholder{
           font-family: 'Be Vietnam', sans-serif;
           color: $dark-grayish-blue;
-          font-size: 1.2rem;
+          font-size: 1.28rem;
         }
       }
       label{
@@ -48,19 +52,25 @@ footer{
     .footer-list{
       @include flexCenter(row);
       align-items: flex-start;
-      width:100%;
-      padding: 2.4rem 0;
+      // width:100%;
+      // width: 76%;
+      width: 103%;
+      margin: 0 3.9rem;
+      // margin: auto;
+      padding: 2.6rem 0 2rem 0;
       // padding-bottom: 2.8rem;
 
       ul{
-        padding: 0 2rem 0 4rem;
+        // padding: 0 2rem 0 4rem;
+        margin-top: 0.1rem;
         width: 60%;
         li{
-          margin-bottom: 1.3rem;
+          margin-bottom: 1.4rem;
           a{
             color: #fff;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 400;
+            letter-spacing: 0.3px;
           }
         }
       }
@@ -73,12 +83,12 @@ footer{
       height: fit-content;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
+      justify-content: center;
       align-items: baseline;
 
       a{
         // font-size: 2rem;
-        margin: 0 1rem;
+        margin: 0 2.2rem;
   
         i{
           color: #fff;
@@ -109,8 +119,14 @@ footer{
       }
     }
     .logo{
-      width: fit-content;
+      // width: fit-content;
+      // margin: auto;
+      width: 100%;
       margin: auto;
+      @include flexCenter(row);
+      margin-top: 0.5rem;
+      position: relative;
+      right: 0.2rem;
 
       img{
         padding: 3.4rem 0 5rem 0;
@@ -120,10 +136,11 @@ footer{
     .copyright{
       font-size: 1.3rem;
       opacity: 0.4;
-      font-weight: 100;
+      font-weight: 400;
       width: fit-content;
       margin: auto;
       color: $very-light-gray;
+      letter-spacing: -0.2px;
     }
   }
 }
