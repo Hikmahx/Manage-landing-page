@@ -471,4 +471,210 @@ header button {
     width: 28rem;
   }
 }
+
+footer {
+  background: #1d1e25;
+}
+
+footer .upper {
+  background: #f25f3a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 50vh;
+}
+
+footer .upper h1 {
+  font-size: 4rem;
+  color: #fff;
+}
+
+footer .upper button {
+  color: #f25f3a;
+  background: #fff;
+}
+
+footer .lower {
+  height: 95.5vh;
+  padding: 2.2rem 2.5rem;
+}
+
+footer .lower form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+footer .lower form input {
+  height: 4.4rem;
+  margin: 2rem 0;
+  margin-right: 1rem;
+  border: none;
+  border-radius: 2.5rem;
+  padding-left: 2.4rem;
+  width: 80%;
+}
+
+footer .lower form input::-webkit-input-placeholder {
+  font-family: 'Be Vietnam', sans-serif;
+  color: #9095a7;
+  font-size: 1.2rem;
+}
+
+footer .lower form input:-ms-input-placeholder {
+  font-family: 'Be Vietnam', sans-serif;
+  color: #9095a7;
+  font-size: 1.2rem;
+}
+
+footer .lower form input::-ms-input-placeholder {
+  font-family: 'Be Vietnam', sans-serif;
+  color: #9095a7;
+  font-size: 1.2rem;
+}
+
+footer .lower form input::placeholder {
+  font-family: 'Be Vietnam', sans-serif;
+  color: #9095a7;
+  font-size: 1.2rem;
+}
+
+footer .lower form label {
+  display: none;
+}
+
+footer .lower form button {
+  width: 26%;
+  padding: 1.35rem 0;
+}
+
+footer .lower .footer-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  padding: 2.4rem 0;
+}
+
+footer .lower .footer-list ul {
+  padding: 0 2rem 0 4rem;
+  width: 60%;
+}
+
+footer .lower .footer-list ul li {
+  margin-bottom: 1.3rem;
+}
+
+footer .lower .footer-list ul li a {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+footer .lower .social {
+  padding: 1.3rem 1.6rem 1.3rem 0rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+footer .lower .social a {
+  margin: 0 1rem;
+}
+
+footer .lower .social a i {
+  color: #fff;
+  width: 2rem;
+  height: 2rem;
+  font-size: 3.2rem;
+}
+
+footer .lower .social a:nth-child(1) i, footer .lower .social a:nth-child(5) i {
+  font-size: 3.6rem;
+}
+
+footer .lower .social a:nth-child(2) {
+  border-radius: 4rem;
+  background-color: #fff;
+  padding: 0.8rem 0.6rem 0.4rem;
+  position: relative;
+  top: -0.4rem;
+}
+
+footer .lower .social a:nth-child(2) i {
+  color: #1d1e25;
+  font-size: 1.8rem;
+}
+
+footer .lower .logo {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+footer .lower .logo img {
+  padding: 3.4rem 0 5rem 0;
+  -webkit-transform: scale(1.08);
+          transform: scale(1.08);
+}
+
+footer .lower .copyright {
+  font-size: 1.3rem;
+  opacity: 0.4;
+  font-weight: 100;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  color: #fafafa;
+}
 /*# sourceMappingURL=style.css.map */
