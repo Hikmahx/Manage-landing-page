@@ -20,8 +20,13 @@ const cards = document.querySelector('.cards'),
 // window default event
 window.addEventListener('load', ()=>{
   checkBtn(0);
+  cardSize();
 })
 
+// card resize event
+window.addEventListener('resize', ()=>{
+  cardSize();
+})
 
 // click event (for bullet btns)
 manualBtns.forEach(manualBtn =>{
@@ -54,4 +59,27 @@ function checkBtn(cardNumber){
   })
   // adds bg for only btn with this number
   manualBtns[cardNumber].classList.add('active');
+}
+
+function cardSize(){
+  if(window.innerWidth > 375 && window.innerWidth < 650){
+    console.log(window.innerWidth)
+
+    card.forEach(card => {
+      card.style.width = `${window.innerWidth - 40}px`;
+      slider.style.scrollPadding  = ' 0';
+      card.style.scrollSnapAlign = 'center';
+      document.querySelector('.manual-navigation').style.display = 'flex';
+
+    });  
+  }
+
+  if(window.innerWidth > 650){
+    card.forEach(card => {
+      card.style.width = `${window.innerWidth/2 - 40}px`;
+      slider.style.scrollPadding  = ' 0 3rem';
+      card.style.scrollSnapAlign = 'start';
+      document.querySelector('.manual-navigation').style.display = 'none';
+    });  
+  }
 }
