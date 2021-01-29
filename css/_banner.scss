@@ -60,3 +60,11 @@
     }
   }
 }
+
+@media (min-width: 630px){
+  .hero{
+    &:before{
+      width: 0;
+    }
+  }
+}

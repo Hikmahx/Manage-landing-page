@@ -245,6 +245,12 @@ header button {
   }
 }
 
+@media (min-width: 630px) {
+  .hero:before {
+    width: 0;
+  }
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
