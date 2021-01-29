@@ -23,9 +23,13 @@ footer{
     // height: 70vh;
     height: 95.8vh;
     padding:2.3rem 2.5rem 2.2rem;
+
     form{
       @include flexCenter(row);
       width: 100%;
+      max-width: 45rem;
+      margin: auto;
+
       input{
         height: 4.4rem;
         margin: 2rem 0;
@@ -41,14 +45,17 @@ footer{
           font-size: 1.28rem;
         }
       }
+
       label{
         display: none;
       }
+
       button{
         width: 26%;
         padding: 1.35rem 0;
       }
     }
+
     .footer-list{
       @include flexCenter(row);
       align-items: flex-start;
@@ -64,8 +71,10 @@ footer{
         // padding: 0 2rem 0 4rem;
         margin-top: 0.1rem;
         width: 60%;
+
         li{
           margin-bottom: 1.4rem;
+
           a{
             color: #fff;
             font-size: 1.4rem;
@@ -118,6 +127,7 @@ footer{
         }
       }
     }
+
     .logo{
       // width: fit-content;
       // margin: auto;
@@ -133,6 +143,7 @@ footer{
         transform: scale(1.08);
       }
     }
+    
     .copyright{
       font-size: 1.3rem;
       opacity: 0.4;

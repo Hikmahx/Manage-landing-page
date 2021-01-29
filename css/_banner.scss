@@ -52,3 +52,11 @@
     }
   }
 }
+
+@media (min-width: 440px){
+  .hero{
+    &::before{
+      top: 16.2rem;
+    }
+  }
+}
