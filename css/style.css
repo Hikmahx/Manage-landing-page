@@ -171,6 +171,82 @@ header button {
   display: none;
 }
 
+@media (min-width: 950px) {
+  header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 1rem 10rem;
+    padding: 0;
+  }
+  header::before {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    top: -23.4rem;
+    right: -30.7rem;
+  }
+  header .logo {
+    margin-top: 0.5rem;
+    height: 2rem;
+  }
+  header .logo img {
+    width: 84%;
+  }
+  header .hamburger-menu {
+    display: none;
+  }
+  header nav {
+    padding: 0;
+    left: 0;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    background: none;
+  }
+  header nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header nav ul li {
+    margin: 0 1.6rem;
+  }
+  header nav ul li a {
+    font-size: 1.4rem;
+  }
+  header button {
+    display: inline-block;
+    position: relative;
+    width: 17rem;
+    padding: 1.35rem 0;
+  }
+}
+
 .hero {
   width: 100%;
   padding: 4.5rem 0 8rem;

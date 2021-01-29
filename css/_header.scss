@@ -102,3 +102,67 @@ header{
     display: none;
   }
 }
+
+@media (min-width: 950px){
+  header{
+    // margin: 0rem;
+    justify-content: space-between;
+    margin: 1rem 10rem;
+    padding: 0;
+
+    &::before{
+      transform: scale(0.7);
+      top: -23.4rem;
+      right: -30.7rem;
+    }
+
+    .logo{
+      margin-top: 0.5rem;
+      height:2rem;
+      img{
+        width: 84%;
+      }
+    }
+
+    .hamburger-menu{
+      display: none;
+    }
+
+    nav{
+      padding: 0;
+      left: 0;
+      position: relative;
+      // background-color: #fff;
+      @include flexCenter(row);
+      justify-content: space-between;
+      width: 100%;
+      visibility: visible;
+      opacity: 1;
+      box-shadow: none;
+      background: none;
+
+      ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li{
+          // visibility: visible;
+          // opacity: 1;
+          margin: 0 1.6rem;
+
+          a{
+            // color: $grayish-violet;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+    button{
+      display: inline-block;
+      position: relative;
+      width: 17rem;
+      padding: 1.35rem 0;
+    }
+  }
+}
