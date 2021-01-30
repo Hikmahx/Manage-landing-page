@@ -327,6 +327,29 @@ header button {
   }
 }
 
+@media (min-width: 950px) {
+  .hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding: 4.5rem 12rem 8rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .hero .hero-image img {
+    width: 40rem;
+  }
+  .hero .hero-text {
+    text-align: left;
+  }
+  .hero .hero-text p {
+    padding: 1rem 0 0 0;
+    width: 35rem;
+  }
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
