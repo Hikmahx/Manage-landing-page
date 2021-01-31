@@ -74,12 +74,21 @@ function cardSize(){
     });  
   }
 
-  if(window.innerWidth > 650){
+  if(window.innerWidth > 650  && window.innerWidth < 1000){
     card.forEach(card => {
       card.style.width = `${window.innerWidth/2 - 40}px`;
       slider.style.scrollPadding  = ' 0 3rem';
       card.style.scrollSnapAlign = 'start';
       document.querySelector('.manual-navigation').style.display = 'none';
     });  
+  }
+
+  if(window.innerWidth > 1000){
+    card.forEach(card => {
+      card.style.width = `${window.innerWidth/3}px`;
+      slider.style.scrollPadding  = ' 0';
+      card.style.scrollSnapAlign = 'center';
+      document.querySelector('.manual-navigation').style.display = 'none';
+    });    
   }
 }
