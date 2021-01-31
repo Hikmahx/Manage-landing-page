@@ -163,6 +163,47 @@ header{
       position: relative;
       width: 17rem;
       padding: 1.35rem 0;
+      box-shadow: 0rem 1.3rem 1rem -0.5rem rgba(242, 95, 58, 0.35);
+    }
+  }
+}
+
+@media (min-width: 1200px){
+  header{
+    margin: 2.2rem 14.6rem;
+    
+    &::before{
+      transform: scale(0.9);
+      top: -20.4rem;
+      right: -32.4rem;
+    }
+
+    .logo{
+      margin-top: 0;
+      height: 2.4rem;
+      img{
+        width: 97%;
+        height: 2.2rem;
+      }
+    }
+
+    nav{
+      ul{
+        margin-left: -0.7rem;
+
+        li{
+          margin: 0 1.5rem;
+          a{
+            font-size: 1.2rem;
+          }
+        }
+      }
+    }
+
+    button{
+      padding: 1.16rem 0;
+      font-size: 1.1rem;
+      width: 16.5rem;
     }
   }
 }

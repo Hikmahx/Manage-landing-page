@@ -244,6 +244,42 @@ header button {
     position: relative;
     width: 17rem;
     padding: 1.35rem 0;
+    -webkit-box-shadow: 0rem 1.3rem 1rem -0.5rem rgba(242, 95, 58, 0.35);
+            box-shadow: 0rem 1.3rem 1rem -0.5rem rgba(242, 95, 58, 0.35);
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    margin: 2.2rem 14.6rem;
+  }
+  header::before {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+    top: -20.4rem;
+    right: -32.4rem;
+  }
+  header .logo {
+    margin-top: 0;
+    height: 2.4rem;
+  }
+  header .logo img {
+    width: 97%;
+    height: 2.2rem;
+  }
+  header nav ul {
+    margin-left: -0.7rem;
+  }
+  header nav ul li {
+    margin: 0 1.5rem;
+  }
+  header nav ul li a {
+    font-size: 1.2rem;
+  }
+  header button {
+    padding: 1.16rem 0;
+    font-size: 1.1rem;
+    width: 16.5rem;
   }
 }
 
