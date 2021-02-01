@@ -782,6 +782,7 @@ header button {
   }
   .carousel .slider .cards .card {
     height: 24.7vh;
+    margin: 1rem 1.3rem 6rem;
   }
   .carousel .slider .cards .card .img-wrapper img {
     width: 90%;
