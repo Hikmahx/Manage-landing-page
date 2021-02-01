@@ -86,6 +86,9 @@ function cardSize(){
   if(window.innerWidth > 1000){
     card.forEach(card => {
       card.style.width = `${window.innerWidth/3}px`;
+      if(window.innerWidth >1200){
+        card.style.width = `${window.innerWidth/3 +55}px`;
+      }
       slider.style.scrollPadding  = ' 0';
       card.style.scrollSnapAlign = 'center';
       document.querySelector('.manual-navigation').style.display = 'none';
