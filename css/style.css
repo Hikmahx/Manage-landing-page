@@ -772,6 +772,38 @@ header button {
   }
 }
 
+@media (min-width: 1200px) {
+  .carousel {
+    padding-bottom: 11.85rem;
+  }
+  .carousel h1 {
+    font-size: 3.6rem;
+    margin-top: 0rem;
+  }
+  .carousel .slider .cards .card {
+    height: 24.7vh;
+  }
+  .carousel .slider .cards .card .img-wrapper img {
+    width: 90%;
+  }
+  .carousel .slider .cards .card h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: -1.8rem;
+  }
+  .carousel .slider .cards .card p {
+    width: 44.5rem;
+    line-height: 1.6;
+    margin-top: 1.8rem;
+  }
+  .carousel button {
+    padding: 1.16rem 0;
+    margin-top: -2rem;
+    font-size: 1.1rem;
+    width: 12rem;
+  }
+}
+
 footer {
   margin-top: 1.3rem;
   background: #1d1e25;
