@@ -572,6 +572,55 @@ header button {
   }
 }
 
+@media (min-width: 1200px) {
+  .about {
+    padding: 5.2rem 10rem;
+    position: relative;
+  }
+  .about h1 {
+    font-size: 3.7rem;
+    line-height: 1.1;
+    margin-top: 0.1rem;
+    letter-spacing: -1.5px;
+  }
+  .about p {
+    margin: 0;
+    width: 75%;
+    font-size: 1.45rem;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+  .about .details {
+    margin-left: 0;
+  }
+  .about .details .detail {
+    margin-bottom: 3.2rem;
+  }
+  .about .details .detail .numbered-heading span {
+    font-size: 1.4rem;
+    margin-top: -0.4rem;
+    width: 6rem;
+  }
+  .about .details .detail .numbered-heading h3 {
+    letter-spacing: -1px;
+  }
+  .about .details .detail p {
+    margin-top: 0.5rem;
+    width: 96%;
+    font-size: 1.42rem;
+    line-height: 1.7;
+  }
+  .about::after {
+    content: url(../images/bg-tablet-pattern.svg);
+    position: absolute;
+    -webkit-transform: scale(0.88);
+            transform: scale(0.88);
+    z-index: -1;
+    left: -48rem;
+    bottom: -37rem;
+  }
+}
+
 .carousel {
   display: -webkit-box;
   display: -ms-flexbox;
