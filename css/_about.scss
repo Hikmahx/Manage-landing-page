@@ -138,6 +138,7 @@
   .about{
     // padding: 4.4rem 10rem;
     padding: 5.2rem 10rem;
+    padding-bottom: 0;
     position: relative;
 
     h1{
@@ -186,7 +187,7 @@
       transform: scale(0.88);
       z-index: -1;
       left: -48rem;
-      bottom: -37rem;
+      bottom: -40rem;
     }
   }
 }

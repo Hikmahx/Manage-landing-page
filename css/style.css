@@ -575,6 +575,7 @@ header button {
 @media (min-width: 1200px) {
   .about {
     padding: 5.2rem 10rem;
+    padding-bottom: 0;
     position: relative;
   }
   .about h1 {
@@ -617,7 +618,7 @@ header button {
             transform: scale(0.88);
     z-index: -1;
     left: -48rem;
-    bottom: -37rem;
+    bottom: -40rem;
   }
 }
 
