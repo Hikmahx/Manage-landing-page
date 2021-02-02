@@ -28,10 +28,6 @@
       display: flex;
       // transform: translateX(-375px);
 
-      input{
-        display: none;
-      }
-
       .card{
         display: flex;
         flex-direction: column;
@@ -166,6 +162,50 @@
       margin-top: -2rem;
       font-size: 1.1rem;
       width: 12rem;
+    }
+  }
+}
+
+@media (min-width:1400px){
+  .carousel{
+    padding-bottom: 14rem;
+
+    h1{
+      font-size: 4.06rem;
+      margin-top: 0.2rem;
+    }
+
+    .slider{
+      margin-top: 1rem;
+      .cards{
+        .card{
+          margin: 1rem 1.7rem 6rem;
+          
+          .img-wrapper{
+            img{
+              width: 100%;
+            }
+          }
+
+          h2{
+            font-size: 1.6rem;
+            margin-top: -1rem;
+          }
+
+          p{
+            width: 49.95rem;
+            font-size: 1.6rem;
+            margin-top: 2rem;
+          }
+        }
+      }
+    }
+    
+    button{
+      width: 13.5rem;
+      padding: 1.35rem 0;
+      font-size: 1.2rem;
+      margin-top: -1.28rem; 
     }
   }
 }

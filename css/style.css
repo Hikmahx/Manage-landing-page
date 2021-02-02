@@ -789,10 +789,6 @@ header button {
   display: flex;
 }
 
-.carousel .slider .cards input {
-  display: none;
-}
-
 .carousel .slider .cards .card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -927,6 +923,40 @@ header button {
     margin-top: -2rem;
     font-size: 1.1rem;
     width: 12rem;
+  }
+}
+
+@media (min-width: 1400px) {
+  .carousel {
+    padding-bottom: 14rem;
+  }
+  .carousel h1 {
+    font-size: 4.06rem;
+    margin-top: 0.2rem;
+  }
+  .carousel .slider {
+    margin-top: 1rem;
+  }
+  .carousel .slider .cards .card {
+    margin: 1rem 1.7rem 6rem;
+  }
+  .carousel .slider .cards .card .img-wrapper img {
+    width: 100%;
+  }
+  .carousel .slider .cards .card h2 {
+    font-size: 1.6rem;
+    margin-top: -1rem;
+  }
+  .carousel .slider .cards .card p {
+    width: 49.95rem;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+  .carousel button {
+    width: 13.5rem;
+    padding: 1.35rem 0;
+    font-size: 1.2rem;
+    margin-top: -1.28rem;
   }
 }
 
