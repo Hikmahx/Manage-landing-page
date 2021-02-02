@@ -290,7 +290,8 @@ header button {
   header::before {
     -webkit-transform: scale(1);
             transform: scale(1);
-    right: -33rem;
+    right: -30.8rem;
+    top: -18.5rem;
   }
   header .logo {
     margin-top: 0;
