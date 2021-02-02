@@ -1170,4 +1170,55 @@ footer .lower .copyright {
     grid-row: 3;
   }
 }
+
+@media (min-width: 1200px) {
+  footer .upper {
+    height: 24vh;
+    background-position: 23rem bottom;
+    padding: 0 14.5rem 0 15rem;
+  }
+  footer .upper h1 {
+    line-height: 1.18;
+    font-size: 3.45rem;
+    text-align: left;
+    font-weight: 500;
+  }
+  footer .upper button {
+    padding: 1.16rem 0;
+    font-size: 1.1rem;
+    width: 12rem;
+  }
+  footer .lower {
+    height: 27.8vh;
+    padding: 2.3rem 12.5rem 2.2rem;
+    -ms-grid-columns: 25% 47% 35%;
+        grid-template-columns: 25% 47% 35%;
+  }
+  footer .lower .logo img {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  footer .lower form {
+    width: 75%;
+  }
+  footer .lower .copyright {
+    width: 72%;
+    text-align: right;
+  }
+  footer .lower .social a i {
+    font-size: 2.2rem;
+  }
+  footer .lower .social a:nth-child(1) i, footer .lower .social a:nth-child(5) i {
+    font-size: 2.2rem;
+  }
+  footer .lower .social a:nth-child(2) {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+  footer .lower .social a:nth-child(2) i {
+    font-size: 1.2rem;
+    top: 24.3%;
+    left: 20%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
