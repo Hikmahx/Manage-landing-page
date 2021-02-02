@@ -53,6 +53,7 @@ footer{
       button{
         width: 26%;
         padding: 1.35rem 0;
+        text-transform: uppercase;
       }
     }
 
@@ -222,6 +223,7 @@ footer{
 
       button{
         margin: 0;
+        box-shadow: 0rem 1rem 1rem -0.5rem #d55c43;
       }
     }
     
@@ -235,6 +237,10 @@ footer{
       form{
         grid-column: 3;
         grid-row: 1;
+
+        button{
+          text-transform: capitalize;
+        }
       }
       .footer-list{
         grid-column: 2;
@@ -349,6 +355,73 @@ footer{
             }
           }
         }
+      }
+    }
+  }
+}
+
+@media (min-width:1400px){
+  footer{
+    .upper{
+      height: 24.5vh;
+      background-position: 25rem bottom;
+      padding: 0 16rem 0 16.5rem;
+
+      h1{
+        font-size: 3.9rem;
+        // font-weight: 700;
+        margin-top: -0.5rem;
+        max-width: 46rem;
+        line-height: 1.14;
+      }
+
+      button{
+        width: 13.8rem;
+        padding: 1.55rem 0 1.15rem;
+        margin-top: 0.2rem;
+        font-size: 1.2rem;
+      }
+    }
+
+    .lower{
+      padding-left: 13.3rem;
+      grid-template-columns: 23.5% 47% 34%;
+
+      .logo{
+        img{
+
+        }
+      }
+
+      .social{
+        margin-top: 2rem;
+        margin-left: 3.5rem;
+
+        a{
+          margin: 0 0.6rem;
+        }
+      }
+
+      .footer-list{
+        margin-top: 1.4rem;
+      }
+
+      form{
+        margin-top: 1.5rem;
+        margin-left: 3.8rem;
+        width: 68%;
+
+        input{
+          padding-left: 1.4rem;
+        }
+
+        button{
+          font-size: 1.1rem;
+        }
+      }
+      .copyright{
+        margin-top: 3.8rem;
+        margin-left: 2rem;
       }
     }
   }

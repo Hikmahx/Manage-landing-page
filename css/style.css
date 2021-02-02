@@ -1061,6 +1061,7 @@ footer .lower form label {
 footer .lower form button {
   width: 26%;
   padding: 1.35rem 0;
+  text-transform: uppercase;
 }
 
 footer .lower .footer-list {
@@ -1272,6 +1273,8 @@ footer .lower .copyright {
   }
   footer .upper button {
     margin: 0;
+    -webkit-box-shadow: 0rem 1rem 1rem -0.5rem #d55c43;
+            box-shadow: 0rem 1rem 1rem -0.5rem #d55c43;
   }
   footer .lower {
     height: 29.5vh;
@@ -1285,6 +1288,9 @@ footer .lower .copyright {
     grid-column: 3;
     -ms-grid-row: 1;
     grid-row: 1;
+  }
+  footer .lower form button {
+    text-transform: capitalize;
   }
   footer .lower .footer-list {
     -ms-grid-column: 2;
@@ -1374,6 +1380,56 @@ footer .lower .copyright {
     font-size: 1.2rem;
     top: 24.3%;
     left: 20%;
+  }
+}
+
+@media (min-width: 1400px) {
+  footer .upper {
+    height: 24.5vh;
+    background-position: 25rem bottom;
+    padding: 0 16rem 0 16.5rem;
+  }
+  footer .upper h1 {
+    font-size: 3.9rem;
+    margin-top: -0.5rem;
+    max-width: 46rem;
+    line-height: 1.14;
+  }
+  footer .upper button {
+    width: 13.8rem;
+    padding: 1.55rem 0 1.15rem;
+    margin-top: 0.2rem;
+    font-size: 1.2rem;
+  }
+  footer .lower {
+    padding-left: 13.3rem;
+    -ms-grid-columns: 23.5% 47% 34%;
+        grid-template-columns: 23.5% 47% 34%;
+  }
+  footer .lower .social {
+    margin-top: 2rem;
+    margin-left: 3.5rem;
+  }
+  footer .lower .social a {
+    margin: 0 0.6rem;
+  }
+  footer .lower .footer-list {
+    margin-top: 1.4rem;
+  }
+  footer .lower form {
+    margin-top: 1.5rem;
+    margin-left: 3.8rem;
+    width: 68%;
+  }
+  footer .lower form input {
+    padding-left: 1.4rem;
+  }
+  footer .lower form button {
+    font-size: 1.1rem;
+  }
+  footer .lower .copyright {
+    margin-top: 3.8rem;
+    margin-left: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
