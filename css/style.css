@@ -283,6 +283,49 @@ header button {
   }
 }
 
+@media (min-width: 1400px) {
+  header {
+    margin: 3.2rem 16.5rem;
+  }
+  header::before {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    right: -33rem;
+  }
+  header .logo {
+    margin-top: 0;
+    height: 3rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    top: 0.2rem;
+  }
+  header .logo img {
+    width: 14.6rem;
+    height: 2.5rem;
+  }
+  header nav ul {
+    margin-bottom: 0.55rem;
+    margin-left: -0.6rem;
+  }
+  header nav ul li {
+    margin: 0 1.75rem;
+  }
+  header nav ul li a {
+    font-size: 1.3rem;
+    word-spacing: 0.3rem;
+  }
+  header button {
+    top: -0.5rem;
+    width: 18.4rem;
+    padding: 1.35rem 0;
+    font-size: 1.2rem;
+  }
+}
+
 .hero {
   width: 100%;
   padding: 4.5rem 0 8rem;

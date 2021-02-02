@@ -207,3 +207,51 @@ header{
     }
   }
 }
+
+@media (min-width:1400px){
+  header{
+    margin: 3.2rem 16.5rem;
+    
+    &::before{
+      transform: scale(1);
+      right: -33rem;
+    }
+
+    .logo{
+      margin-top: 0;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      top: 0.2rem;
+
+      img{
+        width: 14.6rem;
+        height: 2.5rem;
+      }
+    }
+
+    nav{
+      ul{
+        margin-bottom: 0.55rem;
+        // margin-left: -1.1rem;
+        margin-left: -0.6rem;
+
+        li{
+          margin: 0 1.75rem;
+
+          a{
+            font-size: 1.3rem;
+            word-spacing: 0.3rem;
+          }
+        }
+      }
+    }
+
+    button{
+      top: -0.5rem;
+      width: 18.4rem;
+      padding: 1.35rem 0;
+      font-size: 1.2rem;
+    }
+  }
+}
