@@ -703,6 +703,50 @@ header button {
   }
 }
 
+@media (min-width: 1400px) {
+  .about {
+    padding: 7.2rem 12rem;
+  }
+  .about h1 {
+    font-size: 4rem;
+    letter-spacing: -0.7px;
+  }
+  .about p {
+    margin-top: 2rem;
+    font-size: 1.58rem;
+    width: 73%;
+    letter-spacing: 0.04px;
+  }
+  .about .details .detail {
+    margin-bottom: 4rem;
+  }
+  .about .details .detail .numbered-heading span {
+    font-size: 1.8rem;
+    padding: 0.35rem 2rem 0.85rem 2rem;
+    width: 6.5rem;
+    margin-top: 0;
+  }
+  .about .details .detail .numbered-heading h3 {
+    font-size: 1.69rem;
+    letter-spacing: -0.7px;
+    margin-left: 2.8rem;
+    padding-top: 0.4rem;
+  }
+  .about .details .detail p {
+    font-size: 1.6rem;
+    width: 93%;
+    margin-top: 1rem;
+    margin-left: 1.2rem;
+    line-height: 1.68;
+  }
+  .about::after {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    left: -50.4rem;
+    bottom: -43rem;
+  }
+}
+
 .carousel {
   display: -webkit-box;
   display: -ms-flexbox;
