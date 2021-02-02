@@ -53,6 +53,11 @@ button{
   letter-spacing: 0.5px;
   margin: 2.8rem auto;
   border: none;
+
+  &:hover, &:focus{
+    opacity: 0.7;
+    cursor: pointer;
+  }
 }
 
 @import './header';

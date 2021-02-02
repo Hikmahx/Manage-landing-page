@@ -39,6 +39,11 @@ button {
   border: none;
 }
 
+button:hover, button:focus {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 header {
   padding: 4rem 2.4rem 0;
   display: -webkit-box;
@@ -996,6 +1001,12 @@ footer .upper button {
   background: #fff;
 }
 
+footer .upper button:hover, footer .upper button:focus {
+  color: #efc3b8;
+  cursor: pointer;
+  opacity: 1;
+}
+
 footer .lower {
   height: 95.8vh;
   padding: 2.3rem 2.5rem 2.2rem;
@@ -1062,6 +1073,12 @@ footer .lower form button {
   width: 26%;
   padding: 1.35rem 0;
   text-transform: uppercase;
+}
+
+footer .lower form button:hover, footer .lower form button:focus {
+  cursor: pointer;
+  opacity: 1;
+  background: #f98f75;
 }
 
 footer .lower .footer-list {

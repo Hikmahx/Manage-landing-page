@@ -16,6 +16,12 @@ footer{
     button{
       color: $bright-red;
       background: #fff;
+
+      &:hover, &:focus{
+        color: #efc3b8;
+        cursor: pointer;
+        opacity: 1;
+      }
     }
   }
 
@@ -54,6 +60,12 @@ footer{
         width: 26%;
         padding: 1.35rem 0;
         text-transform: uppercase;
+
+        &:hover, &:focus{
+          cursor: pointer;
+          opacity: 1;
+          background: #f98f75;
+        }
       }
     }
 
