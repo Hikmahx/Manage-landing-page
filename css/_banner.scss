@@ -94,7 +94,8 @@
 
 @media (min-width:1200px){
   .hero{
-    padding: 4.7rem 5rem 8rem;
+    padding: 4.7rem 11rem 8rem;
+    justify-content: space-between;
 
     .hero-image{
       width: 56.2rem;
@@ -127,6 +128,50 @@
         padding: 1.16rem 0;
         font-size: 1.1rem;
         width: 12rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero{
+    padding: 4.5rem 15rem 8rem;
+
+    &::before{
+
+    }
+
+    .hero-image{
+      width: 60rem;
+
+      img{
+        width: 58rem;
+        max-width: 60rem;
+      }
+    }
+
+    .hero-text{
+      margin-left: -2.2rem;
+
+      h1{
+        font-size: 5.7rem;
+        margin-top: 5rem;
+        line-height: 1.122;
+        letter-spacing: -1.7px;
+      }
+
+      p{
+        font-size: 1.6rem;
+        width: 70%;
+        margin-top: 2.5rem;
+        line-height: 1.68;
+      }
+
+      button{
+        width: 13.5rem;
+        padding: 1.35rem 0;
+        font-size: 1.2rem;
+        margin-top: 3.3rem;
       }
     }
   }
