@@ -93,6 +93,11 @@ header{
           font-size: 1.6rem;
           font-weight: 700;
           letter-spacing: -0.4px;
+
+          &:hover, &:focus{
+            color: $dark-grayish-blue;
+            transition: 0.2s ease-in-out;
+          }
         }
       }
     }

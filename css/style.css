@@ -172,6 +172,12 @@ header nav ul li a {
   letter-spacing: -0.4px;
 }
 
+header nav ul li a:hover, header nav ul li a:focus {
+  color: #9095a7;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
 header button {
   display: none;
 }
