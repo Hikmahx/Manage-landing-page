@@ -78,6 +78,7 @@ footer{
     .footer-list{
       @include flexCenter(row);
       align-items: flex-start;
+      z-index: 1;
       // width:100%;
       // width: 76%;
       width: 103%;
@@ -99,6 +100,13 @@ footer{
             font-size: 1.4rem;
             font-weight: 400;
             letter-spacing: 0.3px;
+
+            &:hover, &:focus{
+              color: $bright-red;
+              cursor: pointer;
+              transition: 0.2s ease-out;
+            
+            }
           }
         }
       }
@@ -124,6 +132,13 @@ footer{
           height: 2rem;
           font-size: 3.2rem;
           // @include flexCenter(column);
+
+          &:hover, &:focus{
+            color: $bright-red;
+            cursor: pointer;
+            transition: 0.2s ease-out;
+          
+          }
         }
 
         &:nth-child(1), &:nth-child(5){
@@ -139,6 +154,12 @@ footer{
           padding: 0.8rem 0.6rem 0.4rem;
           position: relative;
           top: -0.4rem;
+          &:hover, &:focus{
+            background-color: $bright-red;
+            cursor: pointer;
+            transition: 0.2s ease-out;
+          }
+
           i{
             color: $very-dark-blue;
             font-size: 1.8rem;

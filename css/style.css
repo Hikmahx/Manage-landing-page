@@ -1110,6 +1110,7 @@ footer .lower .footer-list {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  z-index: 1;
   width: 103%;
   margin: 0 3.9rem;
   padding: 2.6rem 0 2rem 0;
@@ -1129,6 +1130,13 @@ footer .lower .footer-list ul li a {
   font-size: 1.4rem;
   font-weight: 400;
   letter-spacing: 0.3px;
+}
+
+footer .lower .footer-list ul li a:hover, footer .lower .footer-list ul li a:focus {
+  color: #f25f3a;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 footer .lower .social {
@@ -1162,6 +1170,13 @@ footer .lower .social a i {
   font-size: 3.2rem;
 }
 
+footer .lower .social a i:hover, footer .lower .social a i:focus {
+  color: #f25f3a;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
 footer .lower .social a:nth-child(1) i, footer .lower .social a:nth-child(5) i {
   font-size: 3.6rem;
 }
@@ -1172,6 +1187,13 @@ footer .lower .social a:nth-child(2) {
   padding: 0.8rem 0.6rem 0.4rem;
   position: relative;
   top: -0.4rem;
+}
+
+footer .lower .social a:nth-child(2):hover, footer .lower .social a:nth-child(2):focus {
+  background-color: #f25f3a;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
 }
 
 footer .lower .social a:nth-child(2) i {
