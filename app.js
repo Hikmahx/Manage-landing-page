@@ -95,3 +95,48 @@ function cardSize(){
     });    
   }
 }
+
+
+// Form Validation
+const form = document.querySelector('form');
+const submitBtn = document.querySelector('form button');
+const input = document.getElementById('email');
+
+form.addEventListener('submit', validateEmail);
+
+
+function validateEmail(e) {
+  const re = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+
+  if(!re.test(input.value)){  
+    e.target.parentElement.style.position = 'relative';
+    const err = document.createElement('div');
+    err.className = 'err';
+    form.appendChild(err);
+    form.style.position = 'relative';
+    err.style.position = 'absolute';
+    err.style.bottom = '13%';
+    err.style.left = '5%';
+    
+    const p = document.createElement('p');
+    p.className = 'error-p';
+    p.appendChild(document.createTextNode('Please insert a valid email'));
+    p.style.color = 'rgb(244, 98, 98)';
+    p.style.fontStyle = 'italic';
+    p.style.fontFamily = `'Be Vietnam', sans-serif`;
+    err.appendChild(p);
+    input.classList.add('error');
+
+
+    setTimeout(clearText, 2000);
+  } else{
+    form.submit();
+  }
+
+  e.preventDefault();
+}
+
+function clearText(){
+  document.querySelector('.error-p').remove();
+  input.classList.remove('error');
+}
