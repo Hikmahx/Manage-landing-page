@@ -24,7 +24,7 @@ html{
 }
 
 .page-container{
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 @mixin flexCenter($direction) {
