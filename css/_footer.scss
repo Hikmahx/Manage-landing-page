@@ -26,7 +26,6 @@ footer{
   }
 
   .lower{
-    // height: 70vh;
     height: 95.8vh;
     padding:2.3rem 2.5rem 2.2rem;
 
@@ -79,16 +78,11 @@ footer{
       @include flexCenter(row);
       align-items: flex-start;
       z-index: 1;
-      // width:100%;
-      // width: 76%;
       width: 103%;
       margin: 0 3.9rem;
-      // margin: auto;
       padding: 2.6rem 0 2rem 0;
-      // padding-bottom: 2.8rem;
 
       ul{
-        // padding: 0 2rem 0 4rem;
         margin-top: 0.1rem;
         width: 60%;
 
@@ -114,8 +108,6 @@ footer{
 
     .social{
       padding: 1.3rem 1.6rem 1.3rem 0rem;
-      // text-align: center;
-      // height: 4rem;
       height: fit-content;
       display: flex;
       flex-direction: row;
@@ -123,7 +115,6 @@ footer{
       align-items: baseline;
 
       a{
-        // font-size: 2rem;
         margin: 0 2.2rem;
   
         i{
@@ -131,7 +122,6 @@ footer{
           width: 2rem;
           height: 2rem;
           font-size: 3.2rem;
-          // @include flexCenter(column);
 
           &:hover, &:focus{
             color: $bright-red;
@@ -143,7 +133,6 @@ footer{
 
         &:nth-child(1), &:nth-child(5){
           i{
-            // padding-left: 1rem;
             font-size: 3.6rem;
           }
         }
@@ -169,8 +158,6 @@ footer{
     }
 
     .logo{
-      // width: fit-content;
-      // margin: auto;
       width: 100%;
       margin: auto;
       @include flexCenter(row);
@@ -199,7 +186,7 @@ footer{
 @media (min-width: 600px){
   footer{
     .upper{
-      height: 55vh
+      height: 55vh;
     }
   }
 }
@@ -267,10 +254,8 @@ footer{
     }
     
     .lower{
-      // height: 27.5vh;
       height: 29.5vh;
       grid-template-columns: 28% 37% 35%;
-      // grid-template-columns: 40% 35% 21%;
       grid-template-rows: 5rem 6rem 5rem;
 
       form{
@@ -303,12 +288,9 @@ footer{
           &:nth-child(2){
 
             top: 0.28rem;
-            // margin-top: 0.4rem;
             padding: 0;
             width: 2.4rem;
             height: 2.4rem;
-            // padding-left: 0.44rem;
-            // padding-top: 0.5rem;
             position: relative;
 
             i{
@@ -361,12 +343,10 @@ footer{
         }
       }
       form{
-        // width: 65%;
         width: 75%;
       }
 
       .copyright{
-        // width: 62%;
         width: 72%;
         text-align: right;
       }
@@ -408,7 +388,6 @@ footer{
 
       h1{
         font-size: 3.9rem;
-        // font-weight: 700;
         margin-top: -0.5rem;
         max-width: 46rem;
         line-height: 1.14;
@@ -425,12 +404,6 @@ footer{
     .lower{
       padding-left: 13.3rem;
       grid-template-columns: 23.5% 47% 34%;
-
-      .logo{
-        img{
-
-        }
-      }
 
       .social{
         margin-top: 2rem;

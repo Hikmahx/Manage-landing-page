@@ -1,9 +1,6 @@
 .about{
   @include flexCenter(column);
-  // padding: 3rem;
   text-align: center;
-  // padding-top: -2re;
-  // height: 300vh;
 
   h1, p{
     padding: 0 4.4rem;
@@ -27,7 +24,7 @@
 
   .details{
     text-align: left;
-    // padding: 2rem;
+
     .detail{
       margin-bottom: 4.7rem;
 
@@ -40,7 +37,6 @@
         &::before{
           content: '';
           position: absolute;
-          // background: linear-gradient(90deg, #fff 2rem, $very-pale-red 2rem);
           background: $very-pale-red;
           top: 0%;
           right: 0%;
@@ -62,8 +58,6 @@
         }
 
         h3{
-          // display: flex;
-          // align-items: center;
           padding-top: 0.5rem;
           font-size: 1.56rem;
           margin-left: 1.56rem;
@@ -74,9 +68,7 @@
       p{
         padding: 0 2.6rem 0 1.6rem;
         margin-top: 0.85rem;
-        // font-size: 1.4rem;
         letter-spacing: 0;
-        // line-height: 2.78rem;
       }
     }
   }
@@ -96,7 +88,6 @@
     text-align: left;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // grid-template-rows:  repeat(auto-fill, minmax(30%, 1fr));
     grid-template-rows: repeat(6, 10rem);
 
     h1{
@@ -136,7 +127,6 @@
 
 @media (min-width: 1200px){
   .about{
-    // padding: 4.4rem 10rem;
     padding: 5.2rem 10rem;
     padding-bottom: 0;
     position: relative;

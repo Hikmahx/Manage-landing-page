@@ -3,16 +3,12 @@ header{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // z-index: 1;
   position: relative;
-  // background: url(../images/bg-tablet-pattern.svg) no-repeat -33.4rem -34.1rem;
 
   &::before{
     content: url(../images/bg-tablet-pattern.svg);
     transform: scale(0.56);
     position: absolute;
-    // top: -33.4rem;
-    // right: -34.1rem;
     top: -29.4rem;
     right: -31.7rem;
   }
@@ -60,7 +56,6 @@ header{
   nav{
     padding: 0 2.4rem;
     padding-top: 3.87rem;
-    // z-index: 999999;
     height: 51.5%;
     background: #fff;
     box-shadow:-1rem 23rem 14rem 17rem rgba(7, 7, 7, 0.2);
@@ -110,7 +105,6 @@ header{
 
 @media (min-width: 950px){
   header{
-    // margin: 0rem;
     justify-content: space-between;
     margin: 1rem 10rem;
     padding: 0;
@@ -137,7 +131,6 @@ header{
       padding: 0;
       left: 0;
       position: relative;
-      // background-color: #fff;
       @include flexCenter(row);
       justify-content: space-between;
       width: 100%;
@@ -152,12 +145,9 @@ header{
         align-items: center;
 
         li{
-          // visibility: visible;
-          // opacity: 1;
           margin: 0 1.6rem;
 
           a{
-            // color: $grayish-violet;
             font-size: 1.4rem;
           }
         }
@@ -239,7 +229,6 @@ header{
     nav{
       ul{
         margin-bottom: 0.55rem;
-        // margin-left: -1.1rem;
         margin-left: -0.6rem;
 
         li{

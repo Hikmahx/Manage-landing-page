@@ -13,8 +13,6 @@
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: inline mandatory;
-    // scroll-padding-left: 2rem;
-    // overflow: hidden;
     align-items: flex-start;
     text-align: center;
     
@@ -26,7 +24,6 @@
       padding-top: 8rem;
       margin: auto;
       display: flex;
-      // transform: translateX(-375px);
 
       .card{
         display: flex;
