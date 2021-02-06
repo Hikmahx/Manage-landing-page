@@ -716,7 +716,7 @@ header button {
 
 @media (min-width: 1400px) {
   .about {
-    padding: 7.2rem 12rem;
+    padding: 7rem 12rem;
   }
   .about h1 {
     font-size: 4rem;
@@ -947,6 +947,10 @@ header button {
   }
   .carousel .slider {
     margin-top: 1rem;
+  }
+  .carousel .slider .cards {
+    -webkit-transform: translateX(-11.5rem);
+            transform: translateX(-11.5rem);
   }
   .carousel .slider .cards .card {
     margin: 1rem 1.7rem 6rem;
