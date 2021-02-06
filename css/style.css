@@ -950,6 +950,7 @@ header button {
   }
   .carousel .slider .cards .card {
     margin: 1rem 1.7rem 6rem;
+    height: 22.5rem;
   }
   .carousel .slider .cards .card .img-wrapper img {
     width: 100%;
@@ -1436,7 +1437,7 @@ footer .lower .copyright {
 
 @media (min-width: 1400px) {
   footer .upper {
-    height: 24.5vh;
+    height: 22.05rem;
     background-position: 25rem bottom;
     padding: 0 16rem 0 16.5rem;
   }
@@ -1456,6 +1457,7 @@ footer .lower .copyright {
     padding-left: 13.3rem;
     -ms-grid-columns: 23.5% 47% 34%;
         grid-template-columns: 23.5% 47% 34%;
+    height: 25.02rem;
   }
   footer .lower .social {
     margin-top: 2rem;
