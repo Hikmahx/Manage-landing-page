@@ -74,6 +74,20 @@
   }
 }
 
+@media(max-width:350px){
+  .about .details .detail .numbered-heading h3 {
+    font-size: 1.4rem;
+  }
+}
+
+
+@media(max-width:320px){
+  .about .details .detail .numbered-heading h3 {
+    font-size: 1.3rem;
+    margin-left: 1rem;
+  }
+}
+
 @media (min-width:600px){
   .about{
     .details{
