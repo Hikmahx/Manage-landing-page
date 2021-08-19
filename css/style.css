@@ -120,6 +120,7 @@ header nav {
   padding: 0 2.4rem;
   padding-top: 3.87rem;
   height: 51.5%;
+  min-height: 28rem;
   background: #fff;
   -webkit-box-shadow: -1rem 23rem 14rem 17rem rgba(7, 7, 7, 0.2);
           box-shadow: -1rem 23rem 14rem 17rem rgba(7, 7, 7, 0.2);
