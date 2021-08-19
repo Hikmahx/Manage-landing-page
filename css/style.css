@@ -531,11 +531,11 @@ header button {
   text-align: center;
 }
 
-.about h1, .about p {
+.about h2, .about p {
   padding: 0 4.4rem;
 }
 
-.about h1 {
+.about h2 {
   margin-top: -1.4rem;
   font-size: 3rem;
   font-weight: 700;
@@ -638,7 +638,7 @@ header button {
     -ms-grid-rows: (10rem)[6];
         grid-template-rows: repeat(6, 10rem);
   }
-  .about h1 {
+  .about h2 {
     -ms-grid-column: 1;
     grid-column: 1;
     -ms-grid-row: 1;
@@ -684,7 +684,7 @@ header button {
     padding-bottom: 0;
     position: relative;
   }
-  .about h1 {
+  .about h2 {
     font-size: 3.7rem;
     line-height: 1.1;
     margin-top: 0.1rem;
@@ -732,7 +732,7 @@ header button {
   .about {
     padding: 7rem 12rem;
   }
-  .about h1 {
+  .about h2 {
     font-size: 4rem;
     letter-spacing: -0.7px;
   }
