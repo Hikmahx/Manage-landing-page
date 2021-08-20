@@ -782,7 +782,7 @@ header button {
           flex-direction: column;
 }
 
-.carousel h1 {
+.carousel h2 {
   font-size: 3.25rem;
   letter-spacing: -1px;
   margin: 0 auto 0.4rem;
@@ -922,7 +922,7 @@ header button {
   .carousel {
     padding-bottom: 11.85rem;
   }
-  .carousel h1 {
+  .carousel h2 {
     font-size: 3.6rem;
     margin-top: 0rem;
   }
@@ -955,7 +955,7 @@ header button {
   .carousel {
     padding-bottom: 14rem;
   }
-  .carousel h1 {
+  .carousel h2 {
     font-size: 4.06rem;
     margin-top: 0.2rem;
   }
